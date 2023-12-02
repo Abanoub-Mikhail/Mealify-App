@@ -1,0 +1,212 @@
+/*  S T A R T     H E A D E R     S E C T I O N  */
+
+@media screen and (max-width: 1200px) {
+    header .container ul {
+        transform: translateX(100%);
+    }
+    header .container ul {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        right: 0;
+        top: 0;
+        padding-top: 30px;
+        bottom: 0;
+        width: 350px;
+        background-color: hsl(0, 0%, 100%);
+        z-index: 999;
+        box-shadow: 0px 0px 14px 0px #0000001b;
+        transition: 0.5s all;
+        border-left: 2px solid hsl(0, 0%, 93%);
+        box-shadow: 0 -10px 5px black;
+    }
+
+    header .container ul:target {
+        transform: translateX(0);
+    }
+    header .container ul:target li a::after {
+        content: "";
+        background-color: transparent;
+    }
+    header .container ul a.close-icon {
+        display: block;
+        align-self: flex-end;
+        padding: 20px;
+    }
+    header .container ul a.close-icon:target ul {
+        transform: translateX(100%);
+    }
+
+
+    header .container ul li {
+        width: 100%;
+    }
+
+    header .container ul li a {
+        display: block;
+        padding: 15px 10px;
+    }
+
+
+    header .container ul li a::after {
+        content: "";
+        background-color: transparent;
+    }
+    header .container .menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    header .container .mode {
+        margin-left:auto ;
+        margin-right: 20px;
+    }
+}
+
+
+/*  E N D     H E A D E R     S E C T I O N  */ 
+
+
+
+
+/*    S T A R T     H O M E       S E C T I O N     */
+
+@media only screen and (max-width: 1200px){
+    .home .container {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .home .container .text , .home .container .image {
+        width: 100%;
+    }
+
+    .home .container .text {
+        display: flex;
+        align-items:center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+
+/*    E N D      H O M E       S E C T I O N     */
+
+
+
+/*     S T A R T     C H E F S       S E C T I O N     */
+
+@media only screen and (max-width: 992px) {
+    .chefs .container .cards .card {
+        width: 48%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .chefs .container .cards .card {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+}
+
+/*     E N D     C H E F S       S E C T I O N     */
+
+
+
+
+/*   S T A R T     G A L L E R Y      S E C T I O N    */
+
+@media only screen and (max-width: 992px) {
+
+    .gallery .container .gallery-photos {
+        height: 1405px;
+    }
+    .gallery .container .gallery-photos .photo {
+        width: 48%;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .gallery .container .gallery-photos {
+        height: auto;
+    }
+
+    .gallery .container .gallery-photos .photo {
+        width: 100%;
+    }
+}
+
+/*   E N D     G A L L E R Y      S E C T I O N    */
+
+
+
+
+
+/*   S T A R T    C O N T A C T      S E C T I O N    */
+
+@media only screen and (max-width: 768px) {
+    .contact .container .details {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contact .container .details .info {
+        width: 100%;
+    }
+
+    .contact .container form .sub {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .contact .container form .sub input {
+        width: 100%;
+    }
+}
+
+/*   E N D    C O N T A C T      S E C T I O N    */
+
+
+/*  S T A R T     F O O T E R     S E C T I O N  */
+
+@media only screen and (max-width: 1200px) {
+    .footer .container .subscribe {
+        width: 100%;
+        order: 2;
+    }
+    .footer .container .section {
+        width: 49%;
+    }
+
+    .footer .container .information {
+        width: 49%;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+.footer .container .subscribe {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer .container .links ul li {
+        width: 48%;
+    }
+    .footer .container .section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer .container .information {
+        width: 100%;
+        order: 2;
+
+    }
+
+}
+
+

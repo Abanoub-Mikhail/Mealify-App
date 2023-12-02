@@ -1,0 +1,18 @@
+:root:has(.mode input:checked) {
+    --first-main-light-bck-color :hsl(0, 0%, 9%) ;
+    --second-main-light-bck-color : hsl(0, 0%, 15%) ;
+    --first-main-light-font-color :hsl(0, 0%, 100%);
+    --second-main-light-font-color-hover : hsl(35, 72%, 49%);
+    --second-main-light-font-color : hsl(35, 72%, 44%);
+    --third-main-light-font-color :hsl(240, 7%, 53%) ;
+}
+
+
+:root:has(.mode input:checked) .mode label.light { 
+    visibility: visible;
+    
+}
+
+:root:has(.mode input:checked) .mode label.dark {
+    visibility: hidden;
+}
